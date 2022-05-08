@@ -77,6 +77,7 @@ def main():
     step3 = bead_returner(filename_for_mapping_all=user_input_map_og, user_atom_numbers=step2)
     step4 = proton_adder(raw_list=step3, user_str=user_input_nitrogen)
     line_adder(user_lines=step4, filename_mapping="protonated_mapping.ndx")
+    exit()
 
 
 main()
