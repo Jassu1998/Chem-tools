@@ -89,6 +89,7 @@ def main():
     step3 = light_atom_adder(user_heavy_atoms=step2, filename_mapping_each_atom=inp_filename_each)
     step4 = file_formatter(raw_list=step3)
     file_writer(formatted_list=step4)
+    exit()
 
 
 main()
