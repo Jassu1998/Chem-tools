@@ -50,10 +50,10 @@ def light_atom_adder(user_heavy_atoms: list, filename_mapping_each_atom: str) ->
         for element in i:
             for y in mapped_each_atom:
                 if element in y:
-                    for x in y:
-                        if x not in mapping_list:
+                    for i in y:
+                        if i not in mapping_list:
                             mapping_list.append(i)
-
+    print(mapping_list)
     return mapping_list
 
 
@@ -89,7 +89,6 @@ def main():
     step3 = light_atom_adder(user_heavy_atoms=step2, filename_mapping_each_atom=inp_filename_each)
     step4 = file_formatter(raw_list=step3)
     file_writer(formatted_list=step4)
-    exit()
 
 
 main()
